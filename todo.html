@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: url('https://craftlakecity.com/wp-content/uploads/2020/04/STEM-Background.jpg') no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    .todo-container {
+      max-width: 80%; /* Set a maximum width */
+      width: 350px; /* Set a specific width */
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      background-color: rgba(255, 255, 255, 0.8);
+      text-align: center;
+    }
+  </style>
+  <title>To-Do List</title>
+</head>
+<body>
+  <div class="todo-container">
+    <h2>To-Do List</h2>
+    <input type="text" id="task" placeholder="Enter a task">
+    <button onclick="addTask()">Add</button>
+    <ul id="taskList"></ul>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
+
